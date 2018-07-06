@@ -17,9 +17,6 @@ public class Event {
     @Column(name = "event_description")
     private String eventDescription;
 
-    @Column(name = "event_day")
-    private int eventDay;
-
     @Column(name = "start_time")
     private String startTime;
 
