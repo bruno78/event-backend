@@ -18,15 +18,15 @@ public class Event {
     private String eventDescription;
 
     @Column(name = "start_time")
-    private Date startTime;
+    private String startTime;
 
     @Column(name = "end_time")
-    private Date endTime;
+    private String endTime;
 
     @Column(name = "user_id")
     private int userId;
 
-    public Event(String event, Date startTime, Date endTime, int userId) {
+    public Event(String event, String startTime, String endTime, int userId) {
         this.eventDescription = event;
         this.startTime = startTime;
         this.endTime = endTime;
