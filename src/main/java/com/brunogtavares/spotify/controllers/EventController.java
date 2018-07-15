@@ -22,7 +22,7 @@ public class EventController {
         return eventRepository.save(newEvent);
     }
 
-    @PatchMapping("/events/{eventId}")
+    @PutMapping("/events/{eventId}")
     public Event updateEventById(@PathVariable Long eventId, @RequestBody Event eventRequest) {
 
        Event eventFromDb = eventRepository.findById(eventId).get();
