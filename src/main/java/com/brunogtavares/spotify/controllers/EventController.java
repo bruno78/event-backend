@@ -17,6 +17,9 @@ public class EventController {
         return eventRepository.findAll();
     }
 
+    @GetMapping("/events/{eventId}")
+    public Event getEventById(@PathVariable Long eventId) { return eventRepository.findById(eventId).get();}
+
     @PostMapping("/events")
     public Event createNewEvent(@RequestBody Event newEvent) {
         return eventRepository.save(newEvent);
